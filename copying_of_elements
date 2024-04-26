@@ -1,0 +1,18 @@
+//COPYING THE STRUCTURE B[0] ELEMENTS TO OTHER 
+#include <stdio.h>
+struct book{
+    int s_no;
+    char name[10];
+    int price;
+};
+int main() {
+    struct book b[3];
+    
+    scanf("%d %s %d",&b[0].s_no,&b[0].name,&b[0].price);
+    b[1]=b[0];
+    b[2]=b[0];
+    for(int i=0;i<3;i++){
+        printf("%d %s %d",b[i].s_no,b[i].name,b[i].price);
+    }
+    return 0;
+}
