@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+//defining the structures
+struct book{
+    int s_no;
+    char name[10];
+    int price;
+};
+int main() {
+    struct book b1;
+    scanf("%d %s %d",&b1.s_no,&b1.name,&b1.price);
+    struct book b2={102,"KKH",1200
+    };
+    struct book b3={103,"BITS",100
+    };
+    printf("%d %s %d\n", b1.s_no, b1.name, b1.price);
+    printf("%d %s %d\n", b2.s_no, b2.name, b2.price);
+    printf("%d %s %d", b3.s_no, b3.name, b3.price);
+    return 0;
+}
